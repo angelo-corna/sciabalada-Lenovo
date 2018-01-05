@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+   
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/rl" >
+	    
+    <Button
+ 	    android:id="@+id/resume"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:onClick="resume"
+	    android:gravity="center|center"
+        android:text="Riprendi la Partita" 
+	    android:layout_marginLeft="700dp"
+	    android:layout_marginTop="0dp"
+	    android:enabled="false"/>     
+    
+    <Button
+ 	    android:id="@+id/delete"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:onClick="delete"
+	    android:gravity="center|center"
+        android:text="Elimina la Partita" 
+	    android:layout_marginLeft="700dp"
+	    android:layout_marginTop="70dp"
+	    android:enabled="false"
+	    android:background="@drawable/colorbuttons"/>     
+    
+    	</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

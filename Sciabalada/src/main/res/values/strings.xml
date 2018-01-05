@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sciabalada</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">SCIABALADA</string>
+    <string name="scala">Scala 40</string>
+    <string name="title_activity_tavolo_scala">Tavolo Scala</string>
+    <string name="title_activity_partita_scala">Partita Scala</string>
+    <string name="add">aggiungi</string>
+    <string name="replace">sostituisci</string>
+    <string name="reEnter">rientra</string>
+    <string name="title_activity_manage_score">ManageScore</string>
+    <string name="test">test</string>
+    <string name="title_activity_partita_scala_qr">Partita Scala 40 Quick &amp; Dirty</string>
+    <string name="title_activity_partita_scala_qd">Partita Scala 40 Quick &amp; Dirty</string>
+    <string name="title_activity_partita_scala40_qd">Partita Scala 40 Quick &amp; Dirty</string>
+    <string name="title_activity_partita_scopa">Partita Scopa</string>
+    <string name="title_activity_tavolo_scopa">Tavolo Scopa</string>
+    <string name="title_activity_resume">Riprendi Partita</string>
+    <string name="title_activity_statistiche">Statistiche</string>
+    <string name="title_activity_settings">Settings</string>
+
+</resources>

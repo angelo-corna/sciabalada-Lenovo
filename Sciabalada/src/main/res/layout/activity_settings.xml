@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+        <TableLayout 
+        android:id="@+id/TableLayout01" 
+        android:stretchColumns="*"
+        android:layout_height="match_parent" 
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true" >
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+            
+		    <TextView
+			    android:id="@+id/destinationFolder"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="15sp"
+			    android:layout_marginLeft="50dp"
+			    android:layout_marginTop="20dp"
+			    android:text="Path di Destinazione dei Salvataggi " />
+		    
+		   <EditText
+		        android:id="@+id/destinationFolderValue"
+			    android:layout_width="600dp"
+			    android:layout_height="wrap_content"
+		        android:textSize="15sp" 
+			    android:layout_marginLeft="30dp"
+			    android:layout_marginRight="80dp"
+			    android:layout_marginTop="20dp"
+			    android:gravity="left"
+			    android:text="/mnt/sdcard/sciabalada"
+			    android:layout_toRightOf="@+id/destinationFolder" />
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+            
+		    <Button
+		 	    android:id="@+id/save"
+		        android:layout_width="200dp"
+		        android:layout_height="50dp"
+		        android:onClick="save"
+			    android:gravity="center|center"
+		        android:text="Salva" 
+			    android:layout_marginLeft="50dp"
+			    android:layout_marginTop="200dp"
+			    android:layout_below="@+id/destinationFolderValue" />
+            
+        </TableRow>
+   	</TableLayout>     
+</RelativeLayout>

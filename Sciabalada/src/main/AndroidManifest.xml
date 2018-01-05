@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trentanof.software.sciabalada"
+    android:versionCode="3"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sciabalada"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.trentanof.software.sciabalada.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.TavoloScala"
+            android:label="@string/title_activity_tavolo_scala" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.PartitaScala"
+            android:label="@string/title_activity_partita_scala" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.PartitaScalaQD"
+            android:label="@string/title_activity_partita_scala_qr" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.PartitaScala40QD"
+            android:label="@string/title_activity_partita_scala40_qd" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.PartitaScopa"
+            android:label="@string/title_activity_partita_scopa" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.TavoloScopa"
+            android:label="@string/title_activity_tavolo_scopa" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.Resume"
+            android:label="@string/title_activity_resume" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.Statistiche"
+            android:label="@string/title_activity_statistiche" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.SelectStatistiche"
+            android:label="Seleziona Range Statistiche" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoSaldo"
+            android:label="Saldo" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPuntate"
+            android:label="Puntate" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoVincite"
+            android:label="Vincite" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPPartiteVinte"
+            android:label="Test Chart" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPartiteVinte"
+            android:label="Test Chart" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoRientri"
+            android:label="Test Chart" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoManiGiocate"
+            android:label="Test Chart" >
+        </activity>
+        <activity
+            android:name="com.trentanof.software.sciabalada.GraficoPartiteGiocate"
+            android:label="Test Chart" >
+        </activity>
+
+
+    </application>
+
+        <uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+</manifest>

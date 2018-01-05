@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableLayout 
+        android:id="@+id/TableLayout01" 
+        android:stretchColumns="*"
+        android:layout_height="match_parent" 
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true" >
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/jackpot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:gravity="bottom|center" />
+            
+            </TableRow>
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+
+        </TableRow> 
+		        
+        
+        <TableRow 
+            android:layout_height="0px" 
+            android:layout_width="0px" 
+            android:layout_weight="1">
+
+             <TextView
+                android:id="@+id/games1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+             
+             
+            <TextView
+		        android:id="@+id/player1"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="28sp"
+		        android:layout_margin="10dp"
+                android:layout_height="80dp" 
+                android:layout_width="10dp"/>
+
+            <TextView
+                android:id="@+id/scoreText1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="28sp" />
+
+		    <ProgressBar
+		        android:id="@+id/scoreBar1"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill_scopa" 
+                android:layout_weight="1"
+                android:layout_height="80dp" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="30"
+                android:onClick="updScore1"
+		        android:progress="0"/>
+
+
+		</TableRow>
+        
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+		    		                 
+
+            <TextView
+		        android:id="@+id/player2"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="28sp"
+		        android:layout_margin="10dp"
+                android:layout_height="80dp" 
+                android:layout_width="10dp"/>
+		    <TextView
+		        android:id="@+id/scoreText2"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="28sp"
+                android:layout_height="80dp" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar2"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill_scopa" 
+                android:layout_weight="1"
+                android:layout_height="80dp" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="30"
+                android:onClick="updScore2"
+		        android:progress="0"/>
+
+
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

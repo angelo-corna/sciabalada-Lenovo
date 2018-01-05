@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    
+    
+    <TextView
+	    android:id="@+id/puntata"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginTop="20dp"
+	    android:text="Puntata" />
+    
+   <EditText
+        android:id="@+id/valuePuntata"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginTop="20dp"
+	    android:gravity="center"
+	    android:layout_toRightOf="@+id/puntata" />
+   
+    <TextView
+	    android:id="@+id/rientri"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:text="Rientri"
+	    android:layout_marginLeft="100dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_toRightOf="@+id/valuePuntata" />
+    
+   <EditText
+        android:id="@+id/valueRientri"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginTop="20dp"
+   	    android:gravity="center"
+	    android:layout_toRightOf="@+id/rientri" />
+    
+    <Button
+ 	    android:id="@+id/play"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="play"
+	    android:gravity="center|center"
+        android:text="Inizia la partita" 
+	    android:layout_marginLeft="70dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_toRightOf="@+id/valueRientri" />
+    
+    <TableLayout 
+        android:id="@+id/TableLayout01" 
+        android:stretchColumns="*"
+        android:layout_height="match_parent" 
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true" >
+   
+         <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+	        <ImageView
+	            android:id="@+id/angelo"
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:src="@drawable/angelo0"
+			    android:layout_marginTop="100dp"
+	      		android:onClick="setAngelo"/>
+	        
+	        <ImageView
+	            android:id="@+id/co"
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:src="@drawable/co0"
+			    android:layout_marginTop="100dp"
+	      		android:onClick="setCo"/>
+
+			 <ImageView
+				 android:id="@+id/katia"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/katia0"
+				 android:layout_marginTop="100dp"
+				 android:onClick="setKatia"/>
+
+			 <ImageView
+				 android:id="@+id/mario"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/mario0"
+				 android:layout_marginTop="100dp"
+				 android:onClick="setMario"/>
+
+			 <ImageView
+				 android:id="@+id/mauro"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:src="@drawable/mauro0"
+				 android:layout_marginTop="100dp"
+				 android:onClick="setMauro"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+		        android:id="@+id/name1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center|center"
+		        android:textSize="30sp"
+		        android:text="Angelo" />
+
+            <TextView
+		        android:id="@+id/name2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center|center"
+		        android:textSize="30sp"
+		        android:text="Co" />
+
+			<TextView
+				android:id="@+id/name6"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Katia" />
+
+
+			<TextView
+				android:id="@+id/name8"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Mario" />
+
+			<TextView
+				android:id="@+id/name9"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Mauro" />
+		</TableRow>
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        
+	        <ImageView
+	            android:id="@+id/renzo"
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:src="@drawable/renzo0"
+			    android:layout_marginTop="20dp"
+	      		android:onClick="setRenzo"/>
+
+			<ImageView
+				android:id="@+id/karmen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/karmen0"
+				android:layout_marginTop="20dp"
+				android:onClick="setKarmen"/>
+
+			<ImageView
+				android:id="@+id/guest1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest10"
+				android:layout_marginTop="20dp"
+				android:onClick="setGuest1"/>
+
+			<ImageView
+				android:id="@+id/guest2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest20"
+				android:layout_marginTop="20dp"
+				android:onClick="setGuest2"/>
+
+
+			<ImageView
+				android:id="@+id/guest3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/guest30"
+				android:layout_marginTop="20dp"
+				android:onClick="setGuest3"/>
+
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+		        android:id="@+id/name10"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center|center"
+		        android:textSize="30sp"
+		        android:text="Renzo" />
+
+			<TextView
+				android:id="@+id/name5"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Karmen" />
+			<TextView
+				android:id="@+id/name3"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest1" />
+
+			<TextView
+				android:id="@+id/name4"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest2" />
+
+			<TextView
+				android:id="@+id/name7"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center|center"
+				android:textSize="30sp"
+				android:text="Guest3" />
+        </TableRow>
+	</TableLayout>
+    
+</RelativeLayout>

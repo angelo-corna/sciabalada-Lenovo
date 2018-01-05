@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="36sp"
+        android:text="SCIABALADA" />
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="10sp"
+        android:text="trentanof software" />
+    
+    <TextView
+        android:id="@+id/fill1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="20sp"
+        android:text=" " />
+    
+    <Button
+        android:id="@+id/scala40"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:gravity="center|center"
+        android:textSize="20sp"
+        android:text="Scala 40" 
+        android:onClick="scala40"/>
+
+    <TextView
+        android:id="@+id/fill2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="8sp"
+        android:text=" " />
+    
+    <Button
+        android:id="@+id/QandD"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:text="Scala 40 Quick and Dirty" 
+        android:onClick="scala40QD"/>
+    
+    <TextView
+        android:id="@+id/fill3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="8sp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/scopa"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:text="Scopa" 
+        android:onClick="scopa"/>
+    
+    <TextView
+        android:id="@+id/fill4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="8sp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/resume"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:text="Riprendi Partita" 
+        android:onClick="resume"/>
+
+    <TextView
+        android:id="@+id/fill5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:textSize="8sp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/statistiche"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        android:text="Statistiche"  
+        android:onClick="statistiche"/>
+    
+</LinearLayout>

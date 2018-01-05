@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableLayout 
+        android:id="@+id/TableLayout01" 
+        android:stretchColumns="*"
+        android:layout_height="match_parent" 
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true" >
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/puntata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:gravity="bottom|left"/>
+            <TextView
+                android:id="@+id/jackpot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="bottom|center" />
+            <TextView
+                android:id="@+id/rientro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="100dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="bottom|right" />
+            
+            
+            </TableRow>
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+
+        </TableRow> 
+		        
+        
+        <TableRow 
+            android:layout_height="0px" 
+            android:layout_width="0px" 
+            android:layout_weight="1">
+
+             <TextView
+                android:id="@+id/games1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+             
+             
+            <TextView
+		        android:id="@+id/player1"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+
+            <TextView
+                android:id="@+id/scoreText1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp" />
+
+		    <ProgressBar
+		        android:id="@+id/scoreBar1"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore1"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+        
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		                 
+
+            <TextView
+		        android:id="@+id/player2"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText2"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar2"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore2"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter2"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+		<TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+		    
+             <TextView
+                android:id="@+id/games3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		    
+		    <TextView
+		        android:id="@+id/player3"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText3"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar3"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore3"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter3"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+		    		    		    
+		</TableRow>
+        
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            		    
+
+            <TextView
+		        android:id="@+id/player4"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText4"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar4"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore4"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter4"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            <TextView
+		        android:id="@+id/player5"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText5"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar5"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore5"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter5"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+            		    
+		</TableRow>
+        
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            
+            <TextView
+		        android:id="@+id/player6"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText6"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar6"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore6"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter6"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+ 
+		</TableRow>
+
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		    
+            <TextView
+		        android:id="@+id/player7"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText7"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar7"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore7"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter7"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+        		
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		    
+           <TextView
+		        android:id="@+id/player8"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText8"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar8"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore8"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter8"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		    
+           <TextView
+		        android:id="@+id/player9"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText9"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar9"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore9"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter9"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+
+        <TableRow 
+            android:layout_width="0px"
+            android:layout_height="0px" 
+            android:layout_weight="1" >
+             <TextView
+                android:id="@+id/games10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center|center"
+   				android:background="#35d926"
+    			android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+		    		    
+           <TextView
+		        android:id="@+id/player10"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="18sp"
+		        android:layout_margin="10dp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <TextView
+		        android:id="@+id/scoreText10"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="18sp"
+                android:layout_height="match_parent" 
+                android:layout_width="0dp"/>
+		    <ProgressBar
+		        android:id="@+id/scoreBar10"
+		        style="@style/scoreBarStyle"
+		        android:progressDrawable="@drawable/score_fill" 
+                android:layout_weight="1"
+                android:layout_height="match_parent" 
+                android:layout_width="match_parent"
+                android:layout_span="4"
+		        android:layout_margin="5dp"
+		        android:max="300"
+                android:onClick="updScore10"
+		        android:progress="0"/>
+
+		    <TextView
+		        android:id="@+id/reenter10"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="1dp"
+		        android:layout_weight="1"
+		        android:gravity="center|center"
+		        android:textSize="12sp" />
+
+		</TableRow>
+        		        
+         
+	</TableLayout>
+</RelativeLayout>
