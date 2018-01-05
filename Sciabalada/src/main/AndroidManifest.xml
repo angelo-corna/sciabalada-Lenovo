@@ -76,7 +76,7 @@
         </activity>
         <activity
             android:name="com.trentanof.software.sciabalada.GraficoPPartiteVinte"
-            android:label="Test Chart" >
+            android:label="Partite Vinte" >
         </activity>
         <activity
             android:name="com.trentanof.software.sciabalada.GraficoPartiteVinte"
